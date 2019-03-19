@@ -1,18 +1,7 @@
-import _ from 'lodash'
-import './style.css'
-import './style.scss'
-import logo from './icon.jpeg'
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-function component() {
-  const element = document.createElement('div');
-  const array = ['foo', 'bor', 'fizz']
-  element.innerHTML = _.join(array, '-')
-  return element;
-}
-
-document.body.appendChild(component());
-document.body.classList.add('background')
-
-const image = new Image()
-image.src = logo
-document.body.appendChild(image);
+ReactDOM.render(
+  <div>Hello, React!</div>,
+  document.getElementById('root')
+)
