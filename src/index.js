@@ -1,4 +1,7 @@
 import _ from 'lodash'
+import * as util from './utilities'
+
+console.log(util.NAME);
 
 function component() {
   const element = document.createElement('div');
